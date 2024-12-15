@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departure_time: 2024-12-15 19:54:52
+  flight_duration: 2024-12-15 19:54:52
+
+two:
+  departure_time: 2024-12-15 19:54:52
+  flight_duration: 2024-12-15 19:54:52
