@@ -1,7 +1,6 @@
 class FlightsController < ApplicationController
   def index
     @airports_options = Airport.all.map { |a | [ a.airport_code, a.id ] }
-    @flight = Flight.first
 
     # checking presence of params[:departure_time] because it is only field that has no value by default
     if params[:departure_time].present?
@@ -12,6 +11,7 @@ class FlightsController < ApplicationController
   end
 
   def show
+    @flight = Flight.find(params[:id])
   end
 
   def find_flights(find_flights_params)

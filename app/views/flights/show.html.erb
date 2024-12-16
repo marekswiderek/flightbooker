@@ -1,4 +1,8 @@
-<h1>Flights</h1>
-<% @flights.each do |flight| %>
-  <%= flight.id %>
-<% end %>
+<h1>Flight details</h1>
+<div>
+  <h1>Flight_no: <%= @flight.id %></h1>
+  <h2><%= @flight.departure_airport.name << "   ->   " << @flight.arrival_airport.name %></h2>
+  <h3><%= @flight.departure_time %></h3>
+  <h3>Flight duration: <%= @flight.duration.strftime("%Hh %Mm") %></h3>
+  <h2>Price: <%= @flight.price %> PLN</h2>
+</div>

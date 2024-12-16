@@ -1,5 +1,12 @@
 <div>
   <% flights.each do |flight| %>
-    <li><%= flight.id %></li>
+    <%= link_to flight_path(flight.id) do %>
+      <div>
+        <h2><%= flight.departure_airport.name << "   ->   " << flight.arrival_airport.name %></h2>
+        <h3><%= flight.departure_time %></h3>
+        <h3>Flight duration: <%= flight.duration.strftime("%Hh %Mm") %></h3>
+        <h2>Price: <%= flight.price %> PLN</h2>
+      </div>
+    <% end %>
   <% end %>
 </div>

@@ -2,23 +2,14 @@
   <div>
     <%= label_tag(:departure_airport_id, "Departure Airport") %>
     <%= f.select(:departure_airport_id, options_for_select(@airports_options)) %>
-    <% flight.errors.full_messages_for(:departure_airport_id).each do |error_message| %>
-      <div><%= error_message %></div>
-    <% end %>
   </div>
   <div>
     <%= label_tag(:arrival_airport_id, "Arrival Airport") %>
     <%= f.select(:arrival_airport_id, options_for_select(@airports_options)) %>
-    <% flight.errors.full_messages_for(:arrival_airport_id).each do |error_message| %>
-      <div><%= error_message %></div>
-    <% end %>
   </div>
   <div>
     <%= label_tag(:departure_time, "Departure time") %>
     <%= f.datetime_field :departure_time %>
-    <% flight.errors.full_messages_for(:departure_time).each do |error_message| %>
-      <div><%= error_message %></div>
-    <% end %>
   </div>
   <div>
     <%= label_tag(:_passengers, "Number of passengers") %>

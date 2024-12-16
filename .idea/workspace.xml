@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e78fb22d-a303-4eab-a65d-a43ebdda4562" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/flights/_available_flight.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/flights/_search_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/flights/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/flights_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/flights_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/airport.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/airport.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/flight.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/flight.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/flights/_available_flight.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/_available_flight.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/flights/_search_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/_search_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/flights/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/flights/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,7 @@
       <workItem from="1734288432662" duration="7093000" />
       <workItem from="1734300721239" duration="740000" />
       <workItem from="1734350307492" duration="6850000" />
-      <workItem from="1734357299689" duration="4195000" />
+      <workItem from="1734357299689" duration="5489000" />
     </task>
     <servers />
   </component>
