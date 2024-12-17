@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e78fb22d-a303-4eab-a65d-a43ebdda4562" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20241217132831_create_passengers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20241217132831_create_passengers.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,7 @@
       <workItem from="1734300721239" duration="740000" />
       <workItem from="1734350307492" duration="6850000" />
       <workItem from="1734357299689" duration="6712000" />
-      <workItem from="1734439440140" duration="4879000" />
+      <workItem from="1734439440140" duration="5674000" />
     </task>
     <servers />
   </component>
