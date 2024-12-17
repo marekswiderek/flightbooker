@@ -1,15 +1,13 @@
 <div>
-  <% flights.each do |flight| %>
-    <%= form_with method: :get do |f| %>
-      <div>
-        <%= radio_button_tag "_chosen_flight_id", flight.id, :id => "_chosen_flight_id" %>
-        <h2><%= flight.departure_airport.name << "   ->   " << flight.arrival_airport.name %></h2>
-        <h3><%= flight.departure_time %></h3>
-        <h3>Flight duration: <%= flight.duration.strftime("%Hh %Mm") %></h3>
-        <h2>Price: <%= flight.price %> PLN</h2>
-        <%= f.hidden_field :_passengers, value: params[:_passengers] %>
-        <%= f.submit "SUBMIT" %>
-      </div>
-    <% end %>
+  <%= form_with method: :get do |f| %>
+    <div>
+      <%= radio_button_tag "_chosen_flight_id", flight.id, :id => "_chosen_flight_id" %>
+      <h2><%= flight.departure_airport.name << "   ->   " << flight.arrival_airport.name %></h2>
+      <h3><%= flight.departure_time %></h3>
+      <h3>Flight duration: <%= flight.duration.strftime("%Hh %Mm") %></h3>
+      <h2>Price: <%= flight.price %> PLN, Total for <%= params[:_passengers] %> ticket(s): <%= number_with_precision flight.price*params[:_passengers].to_i, :precision => 2 %></h2>
+      <%= f.hidden_field :_passengers, value: params[:_passengers] %>
+      <%= f.submit "SUBMIT" %>
+    </div>
   <% end %>
 </div>

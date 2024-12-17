@@ -1,6 +1,8 @@
 <% if @flights.exists? %>
   <%= render "search_form", flight: @flight %>
-  <%= render "available_flight", flights: @flights %>
+  <% @flights.each do |f| %>
+    <%= render "available_flight", flight: f %>
+  <% end %>
 <% else %>
   <%= render "search_form" %>
 <% end %>
