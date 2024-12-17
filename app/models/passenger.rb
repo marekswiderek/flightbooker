@@ -1,7 +1,7 @@
 class Passenger < ApplicationRecord
   self.primary_key = :passport_no
 
-  has_many :bookings, :foreign_key => "passport_no"
+  has_many :bookings, foreign_key: "passport_no"
   has_many :flights, through: :bookings
 
   validates :passport_no, uniqueness: { case_sensitive: false }, length: { is: 9 }

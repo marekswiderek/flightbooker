@@ -1,0 +1,10 @@
+<div>
+  <%= form_with url: new_booking_path, method: :get do |f| %>
+    <% @flights.each do |single_flight| %>
+      <%= radio_button_tag "_chosen_flight_id", single_flight.id, :id => "_chosen_flight_id" %>
+      <%= f.hidden_field :_passengers, value: params[:_passengers] %>
+      <%= render "flight_details", flight:single_flight %>
+    <% end %>
+    <%= f.submit "SUBMIT" %>
+  <% end %>
+</div>

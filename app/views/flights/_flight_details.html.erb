@@ -1,0 +1,6 @@
+<div>
+  <h2><%= flight.departure_airport.name << "   ->   " << flight.arrival_airport.name %></h2>
+  <h3><%= flight.departure_time %></h3>
+  <h3>Flight duration: <%= flight.duration.strftime("%Hh %Mm") %></h3>
+  <h2>Price: <%= flight.price %> PLN, Total for <%= params[:_passengers] %> ticket(s): <%= number_with_precision flight.price*params[:_passengers].to_i, :precision => 2 %></h2>
+</div>

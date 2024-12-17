@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/booking.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/booking.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/passenger.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/passenger.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/flights/_available_flight.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/_available_flights.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/flights/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/flights/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,7 @@
       <workItem from="1734350307492" duration="6850000" />
       <workItem from="1734357299689" duration="6712000" />
       <workItem from="1734439440140" duration="6506000" />
-      <workItem from="1734446625865" duration="700000" />
+      <workItem from="1734446625865" duration="4597000" />
     </task>
     <servers />
   </component>
