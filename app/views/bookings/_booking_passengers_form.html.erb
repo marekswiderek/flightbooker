@@ -1,0 +1,30 @@
+<% if booking.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+    <ul>
+      <% booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_with model: booking do |booking_form| %>
+  <%= hidden_field_tag :_chosen_flight_id, params[:_chosen_flight_id] %>
+  <%= hidden_field_tag :_passengers, params[:_passengers] %>
+  <%= booking_form.hidden_field :flight_id, value: params[:_chosen_flight_id] %>
+  <ul>
+    <strong>Passenger information:</strong>
+    <%= booking_form.fields_for :passengers do |passenger_form| %>
+    <li>
+      <%= passenger_form.label :name %>
+      <%= passenger_form.text_field :name %>
+      <%= passenger_form.label :surname %>
+      <%= passenger_form.text_field :surname %>
+      <%= passenger_form.label :email %>
+      <%= passenger_form.email_field :email %>
+    </li>
+    <% end %>
+  </ul>
+  <%= booking_form.submit "SUBMIT" %>
+<% end %>
