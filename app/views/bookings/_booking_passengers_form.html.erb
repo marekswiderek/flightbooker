@@ -13,18 +13,25 @@
   <%= hidden_field_tag :_chosen_flight_id, params[:_chosen_flight_id] %>
   <%= hidden_field_tag :_passengers, params[:_passengers] %>
   <%= booking_form.hidden_field :flight_id, value: params[:_chosen_flight_id] %>
+  <div class="flex bg-gray-200">
+    <strong class="bg-gray-200">Passenger(s) informations:</strong>
+  </div>
   <ul>
-    <strong>Passenger information:</strong>
     <%= booking_form.fields_for :passengers do |passenger_form| %>
-    <li>
-      <%= passenger_form.label :name %>
-      <%= passenger_form.text_field :name %>
-      <%= passenger_form.label :surname %>
-      <%= passenger_form.text_field :surname %>
-      <%= passenger_form.label :email %>
-      <%= passenger_form.email_field :email %>
-    </li>
+      <li class="bg-gray-200">
+        <hr class="py-1 border-gray-400">
+        <p class="text-black text-opacity-70 font-medium">PASSENGER DATA</p>
+        <div class="flex flex-col bg-gray-200 py-2 lg:flex-row">
+          <%= passenger_form.label :name, class: "pr-1" %>
+          <%= passenger_form.text_field :name, class: "bg-gray-300 border rounded border-gray-400 lg:mr-3" %>
+          <%= passenger_form.label :surname, class: "pr-1" %>
+          <%= passenger_form.text_field :surname, class: "bg-gray-300 border rounded border-gray-400 lg:mr-3" %>
+          <%= passenger_form.label :email, class: "pr-1" %>
+          <%= passenger_form.email_field :email, class: "bg-gray-300 border rounded border-gray-400" %>
+        </div>
+        <hr class="py-1 border-gray-400">
+      </li>
     <% end %>
   </ul>
-  <%= booking_form.submit "SUBMIT" %>
+  <%= booking_form.submit "SUBMIT", class: "border-1 bg-gray-400 hover:bg-gray-500" %>
 <% end %>

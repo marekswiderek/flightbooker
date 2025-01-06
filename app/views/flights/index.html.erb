@@ -1,5 +1,8 @@
 <% if @flights.exists? %>
-  <%= render "search_form", flight: @flight %>
+  <div class="bg-gray-400 p-2">
+    <strong>SEARCH YOUR FLIGHT</strong>
+    <%= render "search_form", flight: @flight %>
+  </div>
   <%= render "available_flights", flights: @flights %>
 <% else %>
   <%= render "search_form" %>

@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e78fb22d-a303-4eab-a65d-a43ebdda4562" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/bookings/_booking_passengers_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/bookings/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/booking.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/booking.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/passenger.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/passenger.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/bookings/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookings/new.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +270,9 @@
       <workItem from="1734609128862" duration="10217000" />
       <workItem from="1734620961564" duration="1348000" />
       <workItem from="1734656763286" duration="526000" />
-      <workItem from="1734696797361" duration="1606000" />
+      <workItem from="1734696797361" duration="2091000" />
+      <workItem from="1734713496002" duration="461000" />
+      <workItem from="1735990953392" duration="6000" />
     </task>
     <servers />
   </component>
