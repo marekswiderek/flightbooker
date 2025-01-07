@@ -1,0 +1,9 @@
+<div>
+Flight: <%= booking.id %><br>
+Is paid?: <%= booking.payment_verified %><br>
+<%= link_to "ACCEPT PAYMENT", approve_payment_path(3), data: { turbo: false }, class: "px-2 mx-2" %>
+<%= link_to "CANCEL", "#", data: {
+    controller: "modals",
+    action: "modals#close"  
+    }, class: "modal-cancel" %>
+</div>
