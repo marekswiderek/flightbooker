@@ -1,6 +1,23 @@
 <%= turbo_frame_tag "modal" %>
-<h1>Booking</h1>
-<%= @booking.id %>
-<%= @booking.passenger_ids.each do |id| %>
-  <h1><%= id %></h1>
-<% end %>
+<h1 class="bg-gray-400 font-serif">BOOKING DETAILS</h1>
+<div class="flex flex-col divide-x-2 bg-gray-300 md:flex-row">
+  <div class="flex flex-col pr-2">
+    <p class="text-center text-gray-700 text-opacity-40 font-serif">FLIGHT DETAILS</p>
+    <p>Booking ID: <%= @booking.id %></p>
+    <p>Flight: <%= @booking.flight.departure_airport.airport_code %> -> <%= @booking.flight.arrival_airport.airport_code %></p>
+    <p>Departure time: <%= @booking.flight.departure_time %></p>
+    <p>Duration: <%= @booking.flight.duration %></p>
+  </div>
+  <div class="flex flex-col pl-2 pr-2">
+    <p class="text-center text-gray-700 text-opacity-40 font-serif">BOOKING DETAILS</p>
+    <p>Booking value: <%= @booking.booking_value %> PLN</p> 
+    <p><strong>Payment verified: </strong><%= @booking.payment_verified %></p>
+    <%= link_to "PAY", payment_path(@booking), data: { turbo_frame: "modal" }, class:"modal-accept w-1/2 text-center" %>
+  </div>
+  <div class="flex flex-col pl-2 pr-2">
+    <p class="text-center text-gray-700 text-opacity-40 font-serif">PASSENGERS DETAILS</p>
+    <% @booking.passengers.each do |p| %>
+      <%= render "passengers/passenger_data", passenger:p %>
+    <% end %>
+  </div>
+</div>
