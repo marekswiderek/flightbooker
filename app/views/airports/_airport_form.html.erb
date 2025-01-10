@@ -1,0 +1,21 @@
+<%= form_with model: @airport do |form| %>
+    <div>
+        <%= label_tag("Airport code:") %>
+        <%= form.text_field :airport_code, class: "ml-1 border-gray-400 border rounded bg-gray-200" %>
+        <% airport.errors.full_messages_for(:airport_code).each do |error_message| %>
+            </div><%= error_message %></div>
+        <% end %>
+    </div>
+    <div>
+        <%= label_tag ("Airport name:") %>
+        <%= form.text_field :name, class: "border-gray-400 border rounded bg-gray-200" %>
+        <% airport.errors.full_messages_for(:name).each do |error_message| %>
+            </div><%= error_message %></div>
+        <% end %>
+    </div>
+    <%= link_to "CANCEL", "#", data: {
+        controller: "modals",
+        action: "modals#close"  
+        }, class: "modal-cancel" %>
+    <%= form.submit value="SAVE", data: { turbo: false }, class: "modal-accept" %>
+<% end %>

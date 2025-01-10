@@ -1,0 +1,6 @@
+<%# Turbo modal pop-up setup %>
+<%= turbo_frame_tag "modal" do %>
+    <div class="modal">
+        <%= render "airport_form", airport: @airport %>
+    </div>
+<% end %>

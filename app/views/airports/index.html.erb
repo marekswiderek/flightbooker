@@ -1,10 +1,21 @@
-List of AIRPORTS:
-<div class="flex flex-col">
-<% @airports.each do |airport| %>
-<div class="flex flex-col md:flex-row">
-    <p class="mr-3">ID: <%= airport.id %></p>
-    <p class="mr-3">Code: <%= airport.airport_code %></p>
-    <p class="mr-3">Airport: <%= airport.name %></p>
-</div>
+<%# Turbo page requires reload - not to duplicate displayed data %>
+<% turbo_page_requires_reload %>
+<%# Turbo modal pop-up configuration %>
+<%= turbo_frame_tag "modal" do %>
+    <div class="flex flex-col">
+        <p class="bg-gray-400">List of AIRPORTS:</p>
+        <% @airports.each do |airport| %>
+        <div class="flex flex-col md:flex-row bg-gray-300">
+            <p class="mr-3">ID: <%= airport.id %></p>
+            <p class="mr-3">Code: <%= airport.airport_code %></p>
+            <p class="mr-3">Airport: <%= airport.name %></p>
+            <%= link_to "EDIT RECORD", edit_airport_path(airport), data: { turbo_frame: "modal" }, class: "modal-accept text-center md:mr-1" %>
+            <%= link_to "DELETE RECORD", airport_path(airport), data:{
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+            }, class: "modal-cancel text-center" %>
+        </div>
+        <% end %>
+        <%= link_to "ADD RECORD", new_airport_path, data: { turbo_frame: "modal" }, class: "modal-accept text-center mt-1" %>
+    </div>
 <% end %>
-</div>

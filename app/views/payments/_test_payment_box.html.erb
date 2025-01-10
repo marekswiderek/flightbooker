@@ -1,10 +1,10 @@
 <div>
-Booking: <%= booking.id %><br>
-Is paid?: <%= booking.payment_verified %><br>
-<%= link_to "CANCEL", "#", data: {
-    controller: "modals",
-    action: "modals#close"  
-    }, class: "modal-cancel" %>
-<%= link_to "ACCEPT PAYMENT", approve_payment_path(booking.id), data: { turbo: false }, 
-class: "modal-accept" %>
+    Booking: <%= booking.id %><br>
+    Is paid?: <%= booking.payment_verified %><br>
+    <%= link_to "CANCEL", "#", data: {
+        controller: "modals",
+        action: "modals#close"  
+        }, class: "modal-cancel" %>
+    <%= link_to "ACCEPT PAYMENT", approve_payment_path(booking.id), data: { turbo: false }, 
+    class: "modal-accept" %>
 </div>
