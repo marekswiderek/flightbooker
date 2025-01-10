@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   root "flights#index"
@@ -19,4 +20,7 @@ Rails.application.routes.draw do
 
   # PAYMENTS SANDBOX - custom route
   get "payments/approve/:id" => "payments#approve_payment", :as => "approve_payment"
+
+  # ROOT FOR SIGNED-IN ADMIN
+  get "user_root" => "airports#index", :as => "user_root"
 end

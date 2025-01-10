@@ -61,3 +61,7 @@ gem "ruby-lsp"
 gem "tailwindcss-rails", "~> 3.1"
 
 gem "whenever", "~> 1.0"
+
+gem "devise", "~> 4.9"
+
+gem "responders", "~> 3.1"
