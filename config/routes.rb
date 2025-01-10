@@ -2,10 +2,14 @@ Rails.application.routes.draw do
   devise_for :admins
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+  # Basic app routes
   root "flights#index"
   resources :flights, only: [ :index, :show ]
   resources :bookings, only: [ :new, :create, :show ]
   resources :payments, only: [ :show ]
+
+  # Admin panel routes
+  resources :airports, only: [ :index ]
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.

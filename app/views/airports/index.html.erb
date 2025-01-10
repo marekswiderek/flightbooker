@@ -1,0 +1,10 @@
+List of AIRPORTS:
+<div class="flex flex-col">
+<% @airports.each do |airport| %>
+<div class="flex flex-col md:flex-row">
+    <p class="mr-3">ID: <%= airport.id %></p>
+    <p class="mr-3">Code: <%= airport.airport_code %></p>
+    <p class="mr-3">Airport: <%= airport.name %></p>
+</div>
+<% end %>
+</div>
