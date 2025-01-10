@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   get "payments/approve/:id" => "payments#approve_payment", :as => "approve_payment"
 
   # ROOT FOR SIGNED-IN ADMIN
-  get "user_root" => "airports#index", :as => "user_root"
+  get "admin_root" => "airports#index"
 end

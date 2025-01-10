@@ -19,3 +19,5 @@ Airport.ids.combination(2).each do |departure_airport_id, arrival_airport_id|
                             price: (rand(1000000)+4000)/100.0
                             )
 end
+
+Admin.create!(email: "admin@flightbooker.app", password: ENV["admin_password"])

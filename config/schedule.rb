@@ -18,10 +18,10 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-env :GEM_HOME, ENV['GEM_HOME']
-set :bundle_command, '/home/maron/.rbenv/shims/bundle exec'
+env :GEM_HOME, ENV["GEM_HOME"]
+set :bundle_command, "/home/maron/.rbenv/shims/bundle exec"
 
-set :output, './log/cron.log'
+set :output, "./log/cron.log"
 
 every 1.minutes do
   runner "BookingJob.perform_now"
