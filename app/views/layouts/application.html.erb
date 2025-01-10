@@ -20,6 +20,9 @@
 
   <body>
     <%= turbo_frame_tag "modal" %>
+    <% if current_admin %>
+      <%= button_to "Sign out", destroy_admin_session_path, method: :delete  %>
+    <% end %>
     <main class="container px-5 flex flex-col">
       <%= yield %>
     </main>

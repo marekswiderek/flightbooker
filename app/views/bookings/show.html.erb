@@ -12,7 +12,9 @@
     <p class="text-center text-gray-700 text-opacity-40 font-serif">BOOKING DETAILS</p>
     <p>Booking value: <%= @booking.booking_value %> PLN</p> 
     <p><strong>Payment verified: </strong><%= @booking.payment_verified %></p>
+    <% if !@booking.payment_verified? %>
     <%= link_to "PAY", payment_path(@booking), data: { turbo_frame: "modal" }, class:"modal-accept w-1/2 text-center" %>
+    <% end %>
   </div>
   <div class="flex flex-col pl-2 pr-2">
     <p class="text-center text-gray-700 text-opacity-40 font-serif">PASSENGERS DETAILS</p>
