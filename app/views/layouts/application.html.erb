@@ -17,13 +17,15 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
+  <body class="bg-gray-300">
+    <%= link_to root_path do %>
+      <span class="text-red-500 font-semibold font-serif drop-shadow-md">Flight</span><span class="text-gray-200 font-medium font-semibold underline drop-shadow-md">Booker</span>
+    <% end %>
     <%= turbo_frame_tag "modal" %>
     <% if current_admin %>
       <%= button_to "Sign out", destroy_admin_session_path, method: :delete  %>
     <% end %>
-    <main class="container px-5 flex flex-col">
+    <main class="container px-5 flex flex-col content-center mx-auto">
       <%= yield %>
     </main>
   </body>
