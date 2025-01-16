@@ -6,7 +6,7 @@ Departure time can be choosen randomly and available flights will be returned an
 ![Image](https://github.com/user-attachments/assets/95c76b01-3a6e-40b4-a6a9-76528bfe007c)
 ![Image](https://github.com/user-attachments/assets/7919c421-0445-4a71-8e81-0fac11be955d)
 ![Image](https://github.com/user-attachments/assets/b2433bf2-e751-46f2-934f-4d445ccf85f4)
-Phone design example:
+Phone design example:  
 ![Image](https://github.com/user-attachments/assets/1bb8031f-c771-405b-bff6-286733b0d934)
 
 ## Data model diagram
