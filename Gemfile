@@ -58,7 +58,7 @@ end
 
 gem "ruby-lsp"
 
-gem "tailwindcss-rails", "~> 3.1"
+gem "tailwindcss-rails", "~> 4.0"
 
 gem "whenever", "~> 1.0"
 
